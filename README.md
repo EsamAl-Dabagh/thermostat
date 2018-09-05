@@ -20,7 +20,7 @@ Thermostat Constructor
         |__ this.minTemp
         |__ this.isPowerSave
                  |__true: this.maxTemp
-                 |__true: this.maxTemp
+                 |__false: this.maxTemp
         |__ this.energyUsage
 
 
