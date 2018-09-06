@@ -8,20 +8,24 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
+
   <div id="wrapper">
 
     <div id="thermo_body">
-      <div id="display"> 
-        20c
-      </div>
+      <!-- <div id="display"> -->
+        <span id="temp">20c</span>
+      <!-- </div> -->
     </div>
 
-    <div class="btn" id="minus">minus</div>
-    <div class="btn" id="plus">plus</div>
-    <div class="btn" id="reset">reset</div>
-    <div class="btn" id="energy">energy usage</div>
-    <div class="btn" id="powerSave">power save</div>
+    <div class="btn" id="minus"><p class="btn-icon">-</p></div>
+
+    <div id="utility_btn">
+      <div class="btn" id="reset"><p class="btn-text">reset</p></div>
+      <div class="btn" id="energy"><p class="btn-text">energy</p></div>
+      <div class="btn" id="powerSave"><p class="btn-text">power save</p></div>
+    </div>
+
+    <div class="btn" id="plus"><p class="btn-icon">+</p></div>
 
   </div>
 
