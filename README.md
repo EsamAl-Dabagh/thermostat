@@ -18,17 +18,20 @@ Thermostat Constructor
         |
         |__ this.temp
         |__ this.minTemp
-        |__ this.isPowerSave
-                 |__true: this.maxTemp
-                 |__false: this.maxTemp
-        |__ this.energyUsage
+        |__ this.powerSave
+        |__ this.MAX_PS_ON
+        |__ this.MAX_PS_OFF
+
 
 
 Thermostat Prototype
         |
         |__ increase
         |__ decrease
+        |__ isPowerSaveOn
+        |__ togglePowerSave
+        |__ isMaxTemp
         |__ reset
-        |__ energyUsage
+        |__ currentEnergyUsage
 
 ```
