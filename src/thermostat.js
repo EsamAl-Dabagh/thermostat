@@ -47,5 +47,8 @@ Thermostat.prototype.currentEnergyUsage = function() {
   } else {
     return "high-usage"
   }
+}
 
+Thermostat.prototype.reset = function() {
+  this.temp = 20;
 }

@@ -99,4 +99,13 @@ describe("Thermostat", function(){
 
   });
 
+  describe("reset", function() {
+    it("resets temp to 20", function() {
+      thermo.increase();
+      thermo.reset();
+
+      expect(thermo.temp).toEqual(20);
+    });
+  });
+
 });
