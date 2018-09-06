@@ -26,7 +26,7 @@ describe("Thermostat", function(){
 
   describe("MIN_TEMP", function() {
     it("won't allow user to set temp below 10 degrees", function() {
-      for(var i = 20; i >= 10; i--) {
+      for(var i = 20; i > 10; i--) {
         thermo.decrease();
       }
       expect( function(){ thermo.decrease(); } ).toThrowError("Cannot go below 10c");

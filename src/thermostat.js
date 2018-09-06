@@ -17,7 +17,7 @@ Thermostat.prototype.increase = function() {
 }
 
 Thermostat.prototype.decrease = function() {
-  if (this.temp < this.MIN_TEMP) {
+  if (this.temp <= this.MIN_TEMP) {
     throw new Error("Cannot go below 10c");
   } else {
     this.temp--;
