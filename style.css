@@ -70,5 +70,10 @@ grid-template-columns: 1fr;
 }
 
 #powerSaveDisplay {
-  color: forestgreen;
+  color: grey;
+}
+
+#celsius {
+  font-size: .2em;
+  margin-left: 0;
 }
