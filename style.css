@@ -17,11 +17,14 @@ body {
   grid-column: 1 / 4;
   display: grid;
   height: 100%;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
 }
 
 #minus {
   background-color: coral;
   grid-column: 1 / 2;
+  border-bottom-left-radius: 100px;
 }
 
 #utility_btn {
@@ -33,6 +36,7 @@ grid-template-columns: 1fr;
 #plus {
   background-color: darkkhaki;
   grid-column: 3 / 4;
+  border-bottom-right-radius: 100px;
 }
 
 #reset {
@@ -56,9 +60,8 @@ grid-template-columns: 1fr;
 }
 
 #temp {
-  /* margin: auto, auto, 100px, auto; */
-  /* padding-bottom: 20px; */
   font-size: 8em;
+  color: rgb(51, 72, 73);
 }
 
 .btn-icon {

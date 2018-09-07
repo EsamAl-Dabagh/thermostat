@@ -30,6 +30,7 @@ Thermostat.prototype.isPowerSaveOn = function() {
 
 Thermostat.prototype.togglePowerSave = function() {
   this.powerSave = !this.powerSave
+  this.checkTemp();
 }
 
 Thermostat.prototype.isMaxTemp = function() {
@@ -51,4 +52,16 @@ Thermostat.prototype.currentEnergyUsage = function() {
 
 Thermostat.prototype.reset = function() {
   this.temp = 20;
+}
+
+Thermostat.prototype.checkTemp = function() {
+  if(this.powerSave) {
+    if(this.temp > this.MAX_PS_ON) {
+      this.temp = this.MAX_PS_ON;
+    }
+  } else {
+    if(this.temp > this.MAX_PS_OFF) {
+      this.temp = this.MAX_PS_OFF;
+    }
+  }
 }
